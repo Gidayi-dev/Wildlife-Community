@@ -1,0 +1,95 @@
+/* Base styling for the header */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #2d3e50;
+  color: white;
+  position: relative;
+}
+
+/* Right-aligned menu icon */
+.menu-icon {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.menu-icon .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: 0.3s;
+}
+
+/* Styling for the center navigation links */
+.navbar-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1a2b3c;
+  padding: 10px;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #444;
+  display: none; /* Hide by default for dropdown effect */
+}
+
+.navbar-center .nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 8px 0;
+  transition: color 0.3s ease;
+}
+
+.navbar-center .nav-link:hover {
+  color: #1f78b4;
+}
+
+/* Toggle menu when isMenuOpen is true */
+.menu-open .navbar-center {
+  display: flex;
+}
+
+/* Auth buttons inside the menu */
+.navbar-auth {
+  display: flex;
+  flex-direction: column; /* Align buttons vertically */
+  margin-top: 10px; /* Add some space above the buttons */
+}
+
+/* Right section with logo */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar-right img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Button styling */
+.button {
+  background-color: #1f78b4;
+  color: white;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #145a84;
+}
