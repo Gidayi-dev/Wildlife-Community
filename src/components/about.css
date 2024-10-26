@@ -90,3 +90,27 @@
     justify-content: center;
     font-size: 1.4rem;
 }
+
+.history {
+    margin: 2rem auto;
+    width: 70%;
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+}
+
+.history li {
+    list-style: none;
+}
+
+.history img {
+    width: 700px;
+    border-radius: 100px 200px 70px 200px;
+}
+
+.mandate {
+    margin: 2rem auto;
+    width: 70%;
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+
+}
