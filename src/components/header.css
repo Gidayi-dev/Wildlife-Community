@@ -1,7 +1,9 @@
 :root {
-    --color-background: #DFF2EB;
-    --color-text: #333;
-    --color-hover: #c0e6d4;
+    --color-background: #dff2eb;
+    --color-secondary: #b9e5e8;
+    --color-hover: #7ab2d3;
+    --color-tertiary: #4a628a;
+    --color-text: black;
 }
 
 .navbar {
@@ -18,7 +20,7 @@
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
-    height: 100vh; 
+    height: 60vh; 
     object-fit: cover;
 }
 
@@ -109,6 +111,7 @@
 }
 
 .navbar-center {
+    align-items: center;
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
@@ -123,8 +126,9 @@
 .nav-link {
     text-decoration: none;
     color: var(--color-text);
-    padding: 10px;
+    padding: 7px;
     transition: background-color 0.3s ease;
+    font-size: 1.4rem;
 }
 
 .nav-link:hover {
@@ -139,10 +143,11 @@
 
 .button {
     background-color: var(--color-background);
+    font-size: 1.4rem;
     color: var(--color-text);
     border: none;
     border-radius: 4px;
-    padding: 10px;
+    padding: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-top: 5px;
