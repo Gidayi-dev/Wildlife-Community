@@ -1,95 +1,153 @@
-/* Base styling for the header */
+:root {
+    --color-background: #DFF2EB;
+    --color-text: #333;
+    --color-hover: #c0e6d4;
+}
+
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #2d3e50;
-  color: white;
-  position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url();
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Right-aligned menu icon */
+.navbar {
+    background-image: url('src/assets/lion.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh; 
+    object-fit: cover;
+}
+
+.navbar-left,
+.navbar-right,
 .menu-icon {
-  cursor: pointer;
-  position: absolute;
-  top: 15px;
-  right: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
+    position: absolute; 
+    top: 20px;
+}
+.menu-icon {
+    background-color: #4a628a;
 }
 
-.menu-icon .bar {
-  width: 25px;
-  height: 3px;
-  background-color: white;
-  transition: 0.3s;
+
+.navbar-left {
+    left: 20px; 
 }
 
-/* Styling for the center navigation links */
-.navbar-center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #1a2b3c;
-  padding: 10px;
-  position: absolute;
-  top: 60px;
-  left: 0;
-  right: 0;
-  border-top: 1px solid #444;
-  display: none; /* Hide by default for dropdown effect */
-}
-
-.navbar-center .nav-link {
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
-  margin: 8px 0;
-  transition: color 0.3s ease;
-}
-
-.navbar-center .nav-link:hover {
-  color: #1f78b4;
-}
-
-/* Toggle menu when isMenuOpen is true */
-.menu-open .navbar-center {
-  display: flex;
-}
-
-/* Auth buttons inside the menu */
-.navbar-auth {
-  display: flex;
-  flex-direction: column; /* Align buttons vertically */
-  margin-top: 10px; /* Add some space above the buttons */
-}
-
-/* Right section with logo */
 .navbar-right {
-  display: flex;
-  align-items: center;
-  gap: 15px;
+    right: 20px; 
+}
+
+.menu-icon {
+    right: 20px; 
+    cursor: pointer; 
+    
+}
+
+.menu-icon:hover {
+    color: antiquewhite;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
 }
 
 .navbar-right img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+    width: 50px;
+    height: auto;
+    margin-right: 20px;
 }
 
-/* Button styling */
+.menu-toggle {
+    background: #b9e5e8;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7rem;
+    border-radius: 10px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--color-text);
+    margin: 3px 0;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(-20px);
+}
+
+.menu-items.open {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+    z-index: 5;
+}
+
+.navbar-center {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.navbar-left img {
+    width: 70px;
+    height: auto;
+    border-radius: 200px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--color-text);
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: var(--color-hover);
+    border-radius: 4px;
+}
+
+.navbar-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
 .button {
-  background-color: #1f78b4;
-  color: white;
-  border: none;
-  padding: 5px 15px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 5px;
 }
 
 .button:hover {
-  background-color: #145a84;
+    background-color: var(--color-hover);
 }
