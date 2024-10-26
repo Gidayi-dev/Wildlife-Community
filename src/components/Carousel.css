@@ -28,7 +28,7 @@
 
 .carousel-button {
     background-color: var(--color-tertiary);
-    color: white;
+    color: var(--color-text);
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
@@ -37,7 +37,7 @@
 }
 
 .carousel-button:hover {
-    background-color: var(--color-text);
+    background-color: var(--color-background);
 }
 
 .carousel-indicator {
@@ -45,7 +45,7 @@
     bottom: -14px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: azure; 
+    background-color: var(--color-background); 
     padding: 5px 7px;
     border-radius: 5px;
     font-weight: bold;
