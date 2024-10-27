@@ -6,8 +6,8 @@ import About from "./components/about";
 function App() {
   return (
     <>
-    <Header />
-    <About />
+      <Header />
+      <About />
     </>
   );
 }

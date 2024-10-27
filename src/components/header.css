@@ -1,158 +1,158 @@
 :root {
-    --color-background: #dff2eb;
-    --color-secondary: #b9e5e8;
-    --color-hover: #7ab2d3;
-    --color-tertiary: #4a628a;
-    --color-text: black;
+  --color-background: #dff2eb;
+  --color-secondary: #b9e5e8;
+  --color-hover: #7ab2d3;
+  --color-tertiary: #4a628a;
+  --color-text: black;
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-image: url();
-    padding: 10px 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url();
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .navbar {
-    background-image: url('src/assets/lion.jpg'); 
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    height: 60vh; 
-    object-fit: cover;
+  background-image: url("src/assets/lion.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60vh;
+  object-fit: cover;
 }
 
 .navbar-left,
 .navbar-right,
 .menu-icon {
-    position: absolute; 
-    top: 20px;
+  position: absolute;
+  top: 20px;
 }
 .menu-icon {
-    background-color: #4a628a;
+  background-color: #4a628a;
 }
 
-
 .navbar-left {
-    left: 20px; 
+  left: 20px;
 }
 
 .navbar-right {
-    right: 20px; 
+  right: 20px;
 }
 
 .menu-icon {
-    right: 20px; 
-    cursor: pointer; 
-    
+  right: 20px;
+  cursor: pointer;
 }
 
 .menu-icon:hover {
-    color: antiquewhite;
+  color: antiquewhite;
 }
 
 .navbar-left {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .navbar-right {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .navbar-right img {
-    width: 50px;
-    height: auto;
-    margin-right: 20px;
+  width: 50px;
+  height: auto;
+  margin-right: 20px;
 }
 
 .menu-toggle {
-    background: #b9e5e8;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0.7rem;
-    border-radius: 10px;
+  background: #b9e5e8;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.7rem;
+  border-radius: 10px;
 }
 
 .bar {
-    width: 25px;
-    height: 3px;
-    background-color: var(--color-text);
-    margin: 3px 0;
+  width: 25px;
+  height: 3px;
+  background-color: var(--color-text);
+  margin: 3px 0;
 }
 
 .menu-items {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 200px;
-    background-color: white;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    transform: translateY(-20px);
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 200px;
+  background-color: white;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+  transform: translateY(-20px);
 }
 
 .menu-items.open {
-    opacity: 1;
-    pointer-events: auto;
-    transform: translateY(0);
-    z-index: 5;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+  z-index: 5;
 }
 
 .navbar-center {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
 
 .navbar-left img {
-    width: 70px;
-    height: auto;
-    border-radius: 200px;
+  width: 70px;
+  height: auto;
+  border-radius: 200px;
 }
 
 .nav-link {
-    text-decoration: none;
-    color: var(--color-text);
-    padding: 7px;
-    transition: background-color 0.3s ease;
-    font-size: 1.4rem;
+  text-decoration: none;
+  color: var(--color-text);
+  padding: 7px;
+  transition: background-color 0.3s ease;
+  font-size: 1.4rem;
 }
 
 .nav-link:hover {
-    background-color: var(--color-hover);
-    border-radius: 4px;
+  background-color: var(--color-hover);
+  border-radius: 4px;
 }
 
 .navbar-buttons {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .button {
-    background-color: var(--color-background);
-    font-size: 1.4rem;
-    color: var(--color-text);
-    border: none;
-    border-radius: 4px;
-    padding: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 5px;
+  background-color: var(--color-background);
+  font-size: 1.4rem;
+  color: var(--color-text);
+  border: none;
+  border-radius: 4px;
+  padding: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 5px;
 }
 
 .button:hover {
-    background-color: var(--color-hover);
+  background-color: var(--color-hover);
 }
