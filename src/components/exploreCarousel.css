@@ -1,0 +1,83 @@
+.carousel {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    height: 450px;
+    margin: 20px auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .slide.active {
+    opacity: 1;
+    z-index: 1;
+  }
+  
+  .carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+  }
+  
+  .carousel-description {
+    position: absolute;
+    bottom: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 80%;
+  }
+  
+  .carousel-dots {
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .dot {
+    height: 12px;
+    width: 12px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dot.active {
+    background-color: #333;
+  }
+  
+  .explore-description h1 {
+    text-align: center;
+  }
+
+  .par p {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify; /* This justifies the text */
+    line-height: 1.4rem;
+    font-size: 1.2rem;
+    max-width: 70%; /* Adjust the width to control the text box size */
+  }
+  
